@@ -13,4 +13,6 @@ jobs:
          cd target
          nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
       - name: GetNFDconfig获取NFD配置
-        run: cat out-nfd-proxy.log
+        run: |
+          ls
+          cat out-nfd-proxy.log
