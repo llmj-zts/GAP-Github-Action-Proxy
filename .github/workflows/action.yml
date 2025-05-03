@@ -23,9 +23,9 @@ jobs:
         run: |
           touch /tmp/keepalive
           echo 已经完成部署😄
-          echo 使用了HTTP代理(感谢项目:https://github.com/nfd-parser/nfd-proxy)
-          echo 前往https://dashboard.cpolar.com查看代理地址
+          echo 使用了HTTP代理，感谢项目:https://github.com/nfd-parser/nfd-proxy
+          echo 查看代理地址前往https://dashboard.cpolar.com
           echo 代理插件可用https://github.com/zero-peak/ZeroOmega
-          echo 请勿滥用,请手动停止服务
+          echo 请勿滥用,使用后请手动停止服务
       - name: debug
         uses: csexton/debugger-action@master
