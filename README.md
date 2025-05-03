@@ -1,8 +1,8 @@
 # GAP-Github-Action-Proxy
 <h1>简介:<h1/><p/>
   使用了Github提供的action功能构建HTTP代理服务<p/>
-  没有任何安全性可言,请不要用于想要安全性场合<p/>
-  就是拿别人项目东拼西凑出来的<p/>
+  拿别人项目东拼西凑出来的，没有任何安全性可言,请不要用于想要安全性场合<p/>
+  请勿滥用
 <h1>使用:<h1/><p/>
   在setting-->secrets and varibles-->action设置CPOLAR_SESSION为你cpolar的authtoken(注册:cpolar.com)<p/>
   在action中运行<p/>
