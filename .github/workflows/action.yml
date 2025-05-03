@@ -14,9 +14,15 @@ jobs:
          mvn clean package
          cd target
          nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
-      - name: GetNFDconfig获取NFD配置
+      - name: RunPenetration
         run: |
-          cd nfd-proxy/target
-          echo $CPOLAR_ID
+          curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash
+          cpolar authtoken $CPOLAR_ID
+          cpolar tcp 8899
+      - name: GetIp查看代理地址
+        run: |
+          echo 使用HTTP代理
+          echo 前往https://dashboard.cpolar.com查看代理地址
+          echo 代理插件可用https://github.com/zero-peak/ZeroOmega
       - name: debug
         uses: csexton/debugger-action@master
