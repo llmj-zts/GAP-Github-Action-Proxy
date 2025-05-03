@@ -7,5 +7,5 @@
   拷贝到本地仓库
   在setting-->secrets and varibles-->action设置CPOLAR_SESSION为你cpolar的authtoken(注册:cpolar.com)<p/>
   在action中运行<p/>
-推荐使用代理项目:https://github.com/zero-peak/ZeroOmega
+推荐使用代理项目:https://github.com/zero-peak/ZeroOmega<p/>
 感谢项目:https://github.com/nfd-parser/nfd-proxy
