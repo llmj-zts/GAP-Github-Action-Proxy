@@ -15,5 +15,4 @@ jobs:
       - name: GetNFDconfig获取NFD配置
         run: |
           cd nfd-proxy/target
-          ls
           cat out-nfd-proxy.log
