@@ -5,7 +5,7 @@ jobs:
   proxyrun:
     runs-on: ubuntu-latest
     env: 
-      CPOLAR_ID: ${{serects.CPOLAR_SESSION}}
+      CPOLAR_ID: ${{serets.CPOLAR_SESSION}}
     steps:
       - name: get_nfd-proxy
         run: |
