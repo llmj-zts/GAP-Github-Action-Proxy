@@ -1,0 +1,10 @@
+name: 开始运行
+on:
+  workflow_dispatch:
+jobs:
+  proxyrun:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: get_nfd-proxy
+        uses: nfd-parser/nfd-proxy@master
+        run: ls
