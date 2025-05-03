@@ -15,4 +15,5 @@ jobs:
       - name: GetNFDconfig获取NFD配置
         run: |
           cd nfd-proxy/target
+          echo $CPOLAR_SESSION
           cat out-nfd-proxy.log
