@@ -6,6 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get_nfd-proxy
-        run: git clone https://github.com/nfd-parser/nfd-proxy.git
-      - name: look_at_dir
-        run: ls
+        run: |
+         git clone https://github.com/nfd-parser/nfd-proxy.git
+         cd nfd-proxy
+         mvn clean package
+         cd target
+         nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
+      - name: GetNFDconfig获取NFD配置
+        run: cat out-nfd-proxy.log
