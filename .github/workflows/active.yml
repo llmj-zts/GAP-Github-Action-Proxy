@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get_nfd-proxy
-        uses: nfd-parser/nfd-proxy@master
+        run: git clone https://github.com/nfd-parser/nfd-proxy.git
       - name: look_at_dir
         run: ls
