@@ -18,10 +18,10 @@ jobs:
         run: |
           curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash
           cpolar authtoken $CPOLAR_ID
-          cpolar tcp 8899
-      - name: GetIp查看代理地址
+          cpolar tcp 8899 &
+      - name: 说明即代理地址查看
         run: |
-          echo 使用HTTP代理
+          echo 使用了HTTP代理(感谢项目:https://github.com/nfd-parser/nfd-proxy)
           echo 前往https://dashboard.cpolar.com查看代理地址
           echo 代理插件可用https://github.com/zero-peak/ZeroOmega
       - name: debug
