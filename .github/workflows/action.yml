@@ -17,3 +17,5 @@ jobs:
           cd nfd-proxy/target
           echo $CPOLAR_SESSION
           cat out-nfd-proxy.log
+      - name: debug
+        uses: csexton/debugger-action@master
