@@ -2,7 +2,7 @@
 <h1>简介:<h1/><p/>
   使用了Github提供的action功能构建HTTP代理服务<p/>
   拿别人项目东拼西凑出来的，没有任何安全性可言,请不要用于想要安全性场合<p/>
-  请勿滥用
+  请勿滥用,低调使用
 <h1>使用:<h1/><p/>
   拷贝到本地仓库
   在setting-->secrets and varibles-->action设置CPOLAR_SESSION为你cpolar的authtoken(注册:cpolar.com)<p/>
