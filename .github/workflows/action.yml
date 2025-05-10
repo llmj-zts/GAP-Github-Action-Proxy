@@ -15,6 +15,7 @@ jobs:
          nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
       - name: RunPenetration
         run: |
+          sudo cpolar.sh
           cpolar authtoken $CPOLAR_ID
           cpolar tcp 8899 &
       - name: 说明查看😀
