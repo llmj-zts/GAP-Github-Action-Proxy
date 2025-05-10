@@ -7,16 +7,14 @@ jobs:
     env: 
       CPOLAR_ID: ${{secrets.CPOLAR_SESSION}}
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: get_nfd-proxy
         run: |
-         git clone https://github.com/nfd-parser/nfd-proxy.git
-         cd nfd-proxy
-         mvn clean package
          cd target
          nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
       - name: RunPenetration
         run: |
-          curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash
           cpolar authtoken $CPOLAR_ID
           cpolar tcp 8899 &
       - name: 说明查看😀
