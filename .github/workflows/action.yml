@@ -16,7 +16,7 @@ jobs:
           echo 查看代理地址前往下面
           echo 查看现在ip情况前往https://ip.cn
           echo 代理插件可用https://github.com/zero-peak/ZeroOmega
-          echo 只用了ssh代理(socks5)，感谢项目:https://github.com/nfd-parser/nfd-proxy
+          echo 只用了ssh代理socks5，感谢项目:https://github.com/nfd-parser/nfd-proxy
           echo 请勿滥用,使用后请手动停止服务
       - name: debug
         uses: csexton/debugger-action@master
