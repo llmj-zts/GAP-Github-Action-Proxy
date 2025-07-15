@@ -9,23 +9,14 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: get_nfd-proxy
-        run: |
-         cd target
-         nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
-      - name: RunPenetration
-        run: |
-          sudo bash cpolar.sh
-          cpolar authtoken $CPOLAR_ID
-          cpolar tcp 8899 &
       - name: 说明查看😀
         run: |
           touch /tmp/keepalive
           echo 已经完成部署😄
-          echo 查看代理地址前往https://dashboard.cpolar.com/status
+          echo 查看代理地址前往下面
           echo 查看现在ip情况前往https://ip.cn
           echo 代理插件可用https://github.com/zero-peak/ZeroOmega
-          echo 使用了HTTP代理，感谢项目:https://github.com/nfd-parser/nfd-proxy
+          echo 只用了ssh代理(socks5)，感谢项目:https://github.com/nfd-parser/nfd-proxy
           echo 请勿滥用,使用后请手动停止服务
       - name: debug
         uses: csexton/debugger-action@master
