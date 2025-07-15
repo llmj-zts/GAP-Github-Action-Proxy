@@ -4,8 +4,6 @@ on:
 jobs:
   proxyrun:
     runs-on: ubuntu-latest
-    env: 
-      CPOLAR_ID: ${{secrets.CPOLAR_SESSION}}
     steps:
       - name: checkout
         uses: actions/checkout@v4
