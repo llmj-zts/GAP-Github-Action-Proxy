@@ -1,4 +1,4 @@
-name: HTTP代理
+name: SOCKS5代理
 on:
   workflow_dispatch:
 jobs:
