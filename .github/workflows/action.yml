@@ -13,7 +13,7 @@ jobs:
           nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
       - name: RunPenetration
         run: |
-          echo 0
+          echo ${{secrets.CPOLAR_SESSION}}
       - name: 说明查看😀
         run: |
           touch /tmp/keepalive
