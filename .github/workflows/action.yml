@@ -13,7 +13,7 @@ jobs:
           sudo nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
       - name: RunPenetration
         run: |
-          sudo uname -u
+          sudo uname -m
           sudo bash ./cpolar authtoken ${{secrets.CPOLAR_SESSION}}
           sudo bash ./cpolar tcp -region=cn_vip 8899
       - name: 说明查看😀
