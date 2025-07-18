@@ -13,7 +13,7 @@ jobs:
           nohup java -jar nfd-proxy.jar > out-nfd-proxy.log 2>&1 &
       - name: RunPenetration
         run: |
-          ./cpolar authtoken ${{secerts.CPOLAR_SESSION}}
+          ./cpolar authtoken ${{secrets.CPOLAR_SESSION}}
           ./cpolar tcp -region=cn_vip 8899
       - name: 说明查看😀
         run: |
