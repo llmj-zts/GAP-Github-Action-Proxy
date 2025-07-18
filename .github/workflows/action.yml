@@ -15,7 +15,7 @@ jobs:
         run: |
           sudo bash ./cpolar.sh
           sudo cpolar authtoken ${{secrets.CPOLAR_SESSION}}
-          sudo cpolar tcp -region=cn_vip 8899
+          sudo cpolar tcp -region=cn_vip 8899 &
       - name: 说明查看😀
         run: |
           touch /tmp/keepalive
